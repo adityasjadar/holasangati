@@ -1,27 +1,26 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { LanguageProvider } from './LanguageContext';
-import { AuthProvider } from './auth/AuthContext';
-import RequireAuth from './auth/RequireAuth';
-import RequireRole from './auth/RequireRole';
-import Header from './components/layout/Header';
-import Footer from './components/layout/Footer';
+import { AuthProvider, useAuth } from './AuthContext';
+import RequireAuth from './RequireAuth';
+import RequireRole from './RequireRole';
+import Header from './Header';
+import Footer from './Footer';
 
-import LandingPage from './pages/LandingPage';
-import LoginPage from './pages/LoginPage';
-import RegisterPage from './pages/RegisterPage';
-import FarmerDashboard from './pages/FarmerDashboard';
-import WorkerSearchPage from './pages/WorkerSearchPage';
-import MachinerySearchPage from './pages/MachinerySearchPage';
-import MachineDetailsPage from './pages/MachineDetailsPage';
-import NearbyPage from './pages/NearbyPage';
-import PostRequirementPage from './pages/PostRequirementPage';
-import MyRequirementsPage from './pages/MyRequirementsPage';
-import MyMachineryPage from './pages/MyMachineryPage';
-import MyWorkerProfilePage from './pages/MyWorkerProfilePage';
-import ProfilePage from './pages/ProfilePage';
-import AdminDashboard from './pages/AdminDashboard';
-import NotFoundPage from './pages/NotFoundPage';
-import { useAuth } from './auth/AuthContext';
+import LandingPage from './LandingPage';
+import LoginPage from './LoginPage';
+import RegisterPage from './RegisterPage';
+import FarmerDashboard from './FarmerDashboard';
+import WorkerSearchPage from './WorkerSearchPage';
+import MachinerySearchPage from './MachinerySearchPage';
+import MachineDetailsPage from './MachineDetailsPage';
+import NearbyPage from './NearbyPage';
+import PostRequirementPage from './PostRequirementPage';
+import MyRequirementsPage from './MyRequirementsPage';
+import MyMachineryPage from './MyMachineryPage';
+import MyWorkerProfilePage from './MyWorkerProfilePage';
+import ProfilePage from './ProfilePage';
+import AdminDashboard from './AdminDashboard';
+import NotFoundPage from './NotFoundPage';
 
 function Home() {
   const { user } = useAuth();
@@ -57,4 +56,4 @@ export default function App() {
       </AuthProvider>
     </LanguageProvider>
   );
-}
+        }
