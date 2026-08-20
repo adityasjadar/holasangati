@@ -1,5 +1,5 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import { LanguageProvider } from './i18n/LanguageContext';
+import { LanguageProvider } from './LanguageContext';
 import { AuthProvider } from './auth/AuthContext';
 import RequireAuth from './auth/RequireAuth';
 import RequireRole from './auth/RequireRole';
