@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
-import { useLanguage } from '../../i18n/LanguageContext';
-import { useAuth } from '../../auth/AuthContext';
+import { useLanguage } from './LanguageContext';
+import { useAuth } from './AuthContext';
 import { logoutUser } from '../../services/authService';
 
 export default function Header() {
